@@ -1,0 +1,383 @@
+/*Anthony Krivonos*/
+body
+{
+	font-family: mono;
+	font-size: 18px;
+	background-image: url("images/bflybg.jpg");
+	background-repeat: repeat;
+}
+
+nav
+{
+	position: absolute;
+	text-align: center;
+	margin-left: 20px;
+}
+
+nav ul ul
+{
+	display: none;
+}
+
+nav ul li:hover > ul
+{
+	display: block;
+	margin-left:-40px;
+}
+
+nav ul
+{
+	background: white;
+	list-style: none;
+	display: inline-table;
+}
+
+nav ul li
+{
+	float: left;
+}
+
+nav ul li:hover
+{
+	background: white;
+}
+
+nav ul li:hover a
+{
+	color: black;
+}
+
+nav ul li a
+{
+	display: block;
+	margin-left:-40px;
+	margin-bottom: -25px;
+	padding: 25px;
+	color: black;
+	text-decoration: none;
+}
+	
+nav ul ul
+{
+	background: white;
+}
+
+nav ul ul li
+{
+	float: none;
+}
+
+nav ul ul li a
+{
+	color: black;
+}
+
+nav ul ul li a:hover
+{
+	background: white;
+}
+
+.miniitem
+{
+	font-size: 12px;
+	margin-top: 20px;
+	margin-bottom: -50px;
+}
+
+@font-face
+{
+	font-family: mono;
+	src : url('fonts/mono.ttf');
+}
+
+@font-face
+{
+	font-family: kasse;
+	src : url('fonts/kasse.ttf');
+}
+
+.titleitem
+{
+	font-family: kasse;
+	font-size:18pt;
+}
+
+.shopnow
+{
+	position: fixed;
+	z-index: 1;
+	right: -90px;
+	top: 100px;
+	background: white;
+	font-family: courier new;
+	text-decoration: none;
+	color: black;
+	float: right;
+	text-align: right;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	cursor:hand;
+	cursor:pointer;
+}
+
+#cartcount
+{
+	position:fixed;
+	text-align: center;
+	right: 119px;
+}
+
+.sideborder
+{
+	position: fixed;
+	top: 0;
+	right:0;
+	height: 100%;
+	width: 25px;
+	background: white;
+	float: right;
+}
+
+.bgimg
+{
+	position: fixed;
+	opacity: 0.1;
+	height: 100%;
+	top: 8px;
+	left: 20%;
+	z-index: -1;
+}
+
+.login
+{
+	position: absolute;
+	z-index: 0;
+	top: 25%;
+	margin-left:-135px;
+	left:50%;
+	display:none;
+	background-image:url("images/bflybg.jpg");
+	border: solid black;
+	padding:5px;
+	text-align: center;
+	margin-bottom: 50px;
+	width: 200px;
+	font-family: courier new;
+	font-style: oblique;
+	background-color: white;
+	box-shadow: 6px 6px 6px #888888;
+	opacity : 0;
+	color: white;
+}
+
+.login > p
+{
+	font-family: courier new;
+	margin: 6px;
+}
+
+input[type = submit], .register, .error > button
+{
+	background-color: black;
+	color: white;
+	border: none;
+	cursor:hand;
+	cursor:pointer;
+}
+
+
+.b1
+{
+	font-size: 20px;
+	margin-bottom: 5px;
+	display: inline;
+}
+
+.b2
+{
+	font-size: 20px;
+	display: inline;
+}
+
+a
+{
+	cursor:hand;
+	cursor:pointer;
+}
+
+.items
+{
+	position: absolute;
+	z-index: -1;
+	background: white;
+	margin-top: 120px;
+	margin-left: 20px;
+	padding: 10px;
+	width: 320px;
+	height: 690px;
+}
+
+.itemtitle
+{
+	font-size: 35px;
+	font-family: kasse;
+}
+
+.subitem
+{
+	margin-left: 15px;
+	cursor: hand;
+	cursor: pointer;
+	font-family: mono;
+}
+
+.subitem:hover
+{
+	margin-left: 30px;
+}
+
+.info
+{
+	position: absolute;
+	z-index: -1;
+	background: white;
+	margin-top: 120px;
+	margin-left: 420px;
+	padding: 10px;
+	width: 520px;
+	height: 690px;
+	display:none;
+}
+
+.infimage
+{
+	width: 90%;
+	margin-left:5%;
+}
+
+.infname
+{
+	font-family: kasse;
+	font-size: 28pt;
+}
+
+.infdesc
+{
+	font-family: courier new;
+	font-style:italic;
+	font-size: 17pt;
+	position:absolute;
+	text-align: right;
+	right: 15px;
+	margin-top: 5px;
+}
+
+.infident
+{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	font-style:italic;
+}
+
+.info > form
+{
+	position: absolute;
+	bottom: 12px;
+	margin-left: 3px;
+}
+
+.itemobj
+{
+	position: absolute;
+	bottom: 12px;
+}
+
+.itemobj > input[type = text]
+{
+	width:15px;
+	border: groove;
+	height: 16px;
+}
+
+.itemobj > button
+{
+	background-color:white;
+	font-style: monaco;
+	color: black;
+	border: groove;
+	margin-left: -5px;
+}
+
+.bgman
+{
+	position: absolute;
+	z-index: -2;
+	margin-top:140px;
+	right: 0px;
+	width: 50%;
+	left: 600px;
+}
+
+.strtimg
+{
+	position: absolute;
+	z-index: -1;
+	background: white;
+	margin-top: 120px;
+	margin-left: 420px;
+	width: 540px;
+	height: 710px;
+}
+
+.error
+{
+	position: absolute;
+	display: none;
+	z-index: 0;
+	top: 25%;
+	margin-left:-135px;
+	left:50%;
+	background-image:url("images/bflybg.jpg");
+	border: solid black;
+	color: white;
+	padding:5px;
+	text-align: center;
+	margin-bottom: 50px;
+	width: 200px;
+	font-family: courier new;
+	font-style: oblique;
+	background-color: white;
+	box-shadow: 6px 6px 6px #888888;
+}
+.error > .b1
+{
+	font-size: 25pt;
+	margin-top:10px;
+	display: block;
+}
+
+.error > .b2
+{
+	font-family: monaco;
+	font-size: 12pt;
+	display: block;
+}
+
+#sizebox
+{
+	display:none;
+	background-color:white;
+	font-style: monaco;
+	color: black;
+	border: groove;
+	-webkit-appearance: none;
+	border-radius: 0px;
+	margin-left:-5px;
+	padding-left: 8px;
+	width: 40px;
+	height: 24px;
+}

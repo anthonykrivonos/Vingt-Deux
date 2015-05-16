@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<!-- Anthony Krivonos -->
+<html>
+	<head>
+		<title>Vingt-Deux et Cinq Info</title>
+		<link type="text/css" rel = "stylesheet" href="info.css"/>
+		<script src="store.js"></script>
+	</head>
+	<body onload="initialize();">
+		<a  class="shopnow"  onclick="logIn(ON);">Cart: __<span id="cartcount"></span> &diams; Sh&ocirc;p N&ocirc;w</a>
+		<div class="sideborder"></div>
+		<div style="text-align: center;"><img class="bgimg" src="images/roombg.gif" id="BGimg"/></div>
+		
+		<div class="collage" id="collage" onmouseover="backgroundFade(ON);" onmouseout="backgroundFade(OFF);">
+			<h1 id="login" class="login">
+				<p>Login</p>
+				<div class="b1">Us&ecircrn&agraveme:</div>
+				<div class="b2"><input type="text" name = "username" style="width: 134px;"placeholder= "MichaelJordan23"/></div>
+				<div class="b1">P&acircssw&ograverd:</div>
+				<div class="b2"><input type="password" name = "pass" style="width: 140px;" placeholder= "Buckets111"/></div>
+				<input type="submit" value="Enter" class="signin" onclick="logIn(OFF);"/>
+				<a href="info.php"><button class="register">Register</button></a>
+			</h1>
+			<div class="nystore" >
+				<p>New Y&ocircrk St&ocircre</p>
+				<div class="b3">Loc&acirction</div>
+				<div class="b4">800 M&acircin St. B&acircck Alley <br/> Fl&ugravesh&icircng, NY 11351</div>
+				<div class="b3">H&ograveurs</div>
+				<div class="b4">16:30:00 - 18:30:00</div>
+				<div class="b3">Cont&acircct</div>
+				<div class="b4">(718) 933-4311</div>
+			</div>
+			<div class="parisstore">
+				<p>Paris St&ocircre</p>
+				<div class="b3">Loc&acirction</div>
+				<div class="b4">60 Av&egravenue Main&egrave <br/>P&acircris, Fr&acircnc&ecirc 75014</div>
+				<div class="b3">H&ograveurs</div>
+				<div class="b4">08:30:00 - 10:30:00</div>
+				<div class="b3">Cont&acircct</div>
+				<div class="b4">(687) 768-886</div>
+			</div>
+			<div class="questions">
+				<form action="confirmation.php">
+					<p>Qu&egravest&icircons?</p>
+					<div class="b3">Name</div>
+					<div class="b4"><input type="text" name = "name"  style="width: 140px;"placeholder= "Jane Dough"/></div>
+					<div class="b3">Email Addr&ecircss</div>
+					<div class="b4"><input type="email" name = "address" style="width: 140px;" placeholder= "janedough@email.com"/></div>
+					<div class="b3">&Igravenquiry</div>
+					<div class="b4"><textarea type="text" name = "inquiry" style="width:273px; height: 90px;" placeholder= "Do you sell anything for $5.00?"/></textarea></div>
+					<input type="submit" value="Send" class="submitting"/>
+				</form>
+			</div>
+			<div class="xinfo">
+				<p> Ext&agrave Inf&ocirc;</p>
+				<div class="b3">Go&agravel</div>
+				<div class="b4">As a large designer corporation, it is our mission to provide you with the most expensive clothes that hardly differentiate from cheaper brands. Studies have shown that if our goods were any cheaper, no one would buy them.</div>
+				<div class="b3">About &Ocircur D&egravesign&egravers</div>
+				<div class="b4">The world's best-looking clothes are ones that are stolen and changed around from other designers. Thankfully, our artists are way ahead of you.</div>
+				<div class="b3">About &Ocircur F&ocircund&egraver</div>
+				<div class="b4">Anthony founded this corporation with hopes that his handmade clothes, which each took less than $2.00 to make, could be sold at extremely large prices for no reason.</div>
+			</div>
+			<div class="eyephoto"><img src="images/eyes.gif" style="width:250px;"/></div>
+		</div>
+		<nav>
+			<ul>
+				<li onmouseover="backgroundFade(XINFO);" onmouseout="backgroundFade(OFF);"><a  class="titleitem" href="index.php">V&icircngt-D&egrave;ux Inf&ocirc;</a>
+					<ul>
+						<li><a href="men.php">M&egrave;n</a></li>
+						<li><a href="women.php">W&ocirc;men</a></li>
+						<li><a href="blog.php">Bl&ocirc;g</a></li>
+						<li class = "miniitem" onclick="logIn(ON);"><a>L&ocirc;g&icirc;n / R&egrave;gster</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</body>
+</html>

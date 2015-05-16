@@ -1,0 +1,340 @@
+/*Anthony Krivonos*/
+body
+{
+	font-family: mono;
+	font-size: 18px;
+	background-color: gray;
+}
+
+nav
+{
+	position: fixed;
+	text-align: center;
+	margin-left: 20px;
+}
+
+nav ul ul
+{
+	display: none;
+}
+
+nav ul li:hover > ul
+{
+	display: block;
+	margin-left:-40px;
+}
+
+nav ul
+{
+	background: #B8B8B8;
+	list-style: none;
+	display: inline-table;
+}
+
+nav ul li
+{
+	float: left;
+}
+
+nav ul li:hover
+{
+	background: #B8B8B8;
+}
+
+nav ul li:hover a
+{
+	color: white;
+}
+
+nav ul li a
+{
+	display: block;
+	margin-left:-40px;
+	margin-bottom: -25px;
+	padding: 25px;
+	color: white;
+	text-decoration: none;
+}
+	
+nav ul ul
+{
+	background: #B8B8B8;
+}
+
+nav ul ul li
+{
+	float: none;
+}
+
+nav ul ul li a
+{
+	color: black;
+}
+
+nav ul ul li a:hover
+{
+	background: #B8B8B8;
+}
+
+.miniitem
+{
+	font-size: 12px;
+	margin-top: 20px;
+	margin-bottom: -50px;
+}
+
+@font-face
+{
+	font-family: mono;
+	src : url('fonts/mono.ttf');
+}
+
+@font-face
+{
+	font-family: kasse;
+	src : url('fonts/kasse.ttf');
+}
+
+.titleitem
+{
+	font-family: kasse;
+	font-size:18pt;
+}
+
+.bgimg
+{
+	position: fixed;
+	z-index: -3;
+	top: 0; 
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+	opacity: 0.8;
+}
+
+.shopnow
+{
+	position: fixed;
+	z-index: 1;
+	right: -90px;
+	top: 100px;
+	background: #B8B8B8;
+	font-family: courier new;
+	text-decoration: none;
+	color: white;
+	float: right;
+	text-align: right;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	cursor:hand;
+	cursor:pointer;
+}
+
+#cartcount
+{
+	position:fixed;
+	text-align: center;
+	right: 119px;
+}
+
+.sideborder
+{
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	right:0;
+	height: 100%;
+	width: 25px;
+	background-color: #B8B8B8;
+	float: right;
+}
+
+.dragging
+{
+        background-color: #ccc;
+        border: 1px solid #000;
+}
+
+.nystore
+{
+	position: absolute;
+	background-color: #B8B8B8;
+	padding: 10px;
+	width:280px;
+	color: white;
+	font-family: courier new;
+	margin-top: 209px;
+	margin-left: 43px;
+	-webkit-transform: rotate(-70deg);
+	-moz-transform: rotate(-70deg);
+	-ms-transform: rotate(-70deg);
+	-o-transform: rotate(-70deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.parisstore
+{
+	position: absolute;
+	background-color: #323232;
+	padding: 10px;
+	width:280px;
+	color: white;
+	font-family: courier new;
+	margin-top: 329px;
+	margin-left: 288px;
+	-webkit-transform: rotate(20deg);
+	-moz-transform: rotate(20deg);
+	-ms-transform: rotate(20deg);
+	-o-transform: rotate(20deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	
+}
+
+.questions
+{
+	position: absolute;
+	background-color: #404040;
+	padding: 10px;
+	width:280px;
+	color: white;
+	font-family: courier new;
+	margin-top: 500px;
+	margin-left: 43px;
+	-webkit-transform: rotate(20deg);
+	-moz-transform: rotate(20deg);
+	-ms-transform: rotate(20deg);
+	-o-transform: rotate(20deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.xinfo
+{
+	position: absolute;
+	background-color: #A4A4A4;
+	padding: 10px;
+	width:280px;
+	color: white;
+	font-family: courier new;
+	margin-top: 180px;
+	margin-left: 585px;
+	-webkit-transform: rotate(20deg);
+	-moz-transform: rotate(20deg);
+	-ms-transform: rotate(20deg);
+	-o-transform: rotate(20deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.eyephoto
+{
+	position: absolute;
+	margin-top: 340px;
+	margin-left: 855px;
+	-webkit-transform: rotate(-69deg);
+	-moz-transform: rotate(-69deg);
+	-ms-transform: rotate(-69deg);
+	-o-transform: rotate(-69deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	opacity: 0.3;
+}
+
+.nystore > p, .questions > p, .parisstore > p, .xinfo > p
+{
+	font-size: 20pt;
+	margin-bottom: 0px;
+	margin-top: -2px;
+	margin-bottom: 10px;
+}
+
+.b3
+{
+	font-family: courier new;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.b4
+{
+	margin-bottom: 10px;
+}
+
+.collage
+{
+	position: absolute;
+	z-index: -2;
+	margin-left:150px;
+}
+
+.login
+{
+	position: absolute;
+	z-index: -1;
+	width:300px;
+	display: none;
+	opacity : 0;
+	margin-left: 380px;
+	margin-top: 140px;
+	-webkit-transform: rotate(20deg);
+	-moz-transform: rotate(20deg);
+	-ms-transform: rotate(20deg);
+	-o-transform: rotate(20deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.login > p
+{
+	font-family: courier new;
+	margin-bottom: -7px;
+}
+
+.signin, .register
+{
+	position: absolute;
+	margin-left: -274px;
+	margin-top: 60px;
+	background-color: black;
+	color: white;
+	border: none;
+	cursor:hand;
+	cursor:pointer;
+}
+
+.signin
+{
+	margin-left: -247px;
+}
+
+.submitting
+{
+	background-color: white;
+	color: #404040;
+	border: none;
+	cursor:hand;
+	cursor:pointer;
+}
+
+.register
+{
+	margin-left: -56px;
+}
+
+.b1
+{
+	font-size: 20px;
+	margin-bottom: 5px;
+	display: inline;
+}
+
+.b2
+{
+	font-size: 20px;
+	display: inline;
+}
+
+a
+{
+	cursor:hand;
+	cursor:pointer;
+}

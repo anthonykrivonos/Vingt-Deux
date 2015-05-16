@@ -1,0 +1,226 @@
+/*Anthony Krivonos*/
+body
+{
+	font-family: mono;
+	font-size: 18px;
+	background-color: black;
+}
+
+nav
+{
+	position: fixed;
+	text-align: center;
+	margin-left: 20px;
+}
+
+nav ul ul
+{
+	display: none;
+}
+
+nav ul li:hover > ul
+{
+	display: block;
+	margin-left:-40px;
+}
+
+nav ul
+{
+	background: #F9FAF5;
+	list-style: none;
+	display: inline-table;
+}
+
+nav ul li
+{
+	float: left;
+}
+
+nav ul li:hover
+{
+	background: #F9FAF5;
+}
+
+nav ul li:hover a
+{
+	color: black;
+}
+
+nav ul li a
+{
+	display: block;
+	margin-left:-40px;
+	margin-bottom: -25px;
+	padding: 25px;
+	color: black;
+	text-decoration: none;
+}
+	
+nav ul ul
+{
+	background: #F9FAF5;
+}
+
+nav ul ul li
+{
+	float: none;
+}
+
+nav ul ul li a
+{
+	color: black;
+}
+
+nav ul ul li a:hover
+{
+	background: #F9FAF5;
+}
+
+.miniitem
+{
+	font-size: 12px;
+	margin-top: 20px;
+	margin-bottom: -50px;
+}
+
+@font-face
+{
+	font-family: mono;
+	src : url('fonts/mono.ttf');
+}
+
+@font-face
+{
+	font-family: kasse;
+	src : url('fonts/kasse.ttf');
+}
+
+.titleitem
+{
+	font-family: kasse;
+	font-size:18pt;
+}
+
+.bgimg
+{
+	position: fixed;
+	z-index: -1;
+	top: 0; 
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.shopnow
+{
+	position: fixed;
+	z-index: 1;
+	right: -90px;
+	top: 100px;
+	background: #F9FAF5;
+	font-family: courier new;
+	text-decoration: none;
+	color: black;
+	float: right;
+	text-align: right;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	cursor:hand;
+	cursor:pointer;
+}
+
+#cartcount
+{
+	position:fixed;
+	text-align: center;
+	right: 119px;
+}
+
+.sideborder
+{
+	position: fixed;
+	top: 0;
+	right:0;
+	height: 100%;
+	width: 25px;
+	background-color: #F9FAF5;
+	float: right;
+}
+
+.login
+{
+	position: absolute;
+	z-index: -1;
+	top: 25%;
+	width:300px;
+	margin-left:-135px;
+	left:50%;
+	display:none;
+	opacity : 0;
+}
+
+.login > p
+{
+	font-family: courier new;
+	margin-bottom: -7px;
+}
+
+input[type = submit], .register
+{
+	position: absolute;
+	margin-left: -247px;
+	margin-top: 60px;
+	background-color: black;
+	color: white;
+	border: none;
+	cursor:hand;
+	cursor:pointer;
+}
+
+.register
+{
+	position: absolute;
+	margin-left: -274px;
+	margin-top: 60px;
+	background-color: black;
+	color: white;
+	border: none;
+	cursor:hand;
+	cursor:pointer;
+}
+
+.register
+{
+	margin-left: -56px;
+}
+
+.b1
+{
+	font-size: 20px;
+	margin-bottom: 5px;
+	display: inline;
+}
+
+.b2
+{
+	font-size: 20px;
+	display: inline;
+}
+
+.credits
+{
+	position: absolute;
+	font-size: 14px;
+	color:white;
+	left: 0;
+	bottom: 0;
+}
+
+a
+{
+	cursor:hand;
+	cursor:pointer;
+}
